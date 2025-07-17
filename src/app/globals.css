@@ -7,6 +7,12 @@ body {
 
 @font-face {
   font-family: 'Arial_Narrow';
-  src: url("/fonts/Arial Narrow.ttf") format("truetype");
-  font-weight: normal, bold;
+  src: url("../../public/fonts/Arial Narrow.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Arial_Narrow';
+  src: url("../../public/fonts/Arial Narrow Bold.ttf") format("truetype");
+  font-weight: bold;
 }
