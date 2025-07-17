@@ -32,7 +32,7 @@ export default function Home() {
             href="#menu"
           >
             <img
-              className="w-52"
+              className="md:w-52 w-40"
               src="/images/menu-button.png"
               alt="Menu Button"
             />
@@ -42,7 +42,7 @@ export default function Home() {
             href="#where"
           >
             <img
-              className="w-52"
+              className="md:w-52 w-40"
               src="/images/where-button.png"
               alt="Where Button"
             />
@@ -54,7 +54,7 @@ export default function Home() {
             href="#info"
           >
             <img
-              className="w-56"
+              className="md:w-56 w-44"
               src="/images/info-button.png"
               alt="info Button"
             />
@@ -64,7 +64,7 @@ export default function Home() {
             href="#faq"
           >
             <img
-              className="w-56"
+              className="md:w-56 w-44"
               src="/images/faq-button.png"
               alt="faq Button"
             />
@@ -120,7 +120,7 @@ export default function Home() {
           <br/>
         </p>
 
-      <div className="flex flex-col space-x-16 pt-4">
+      <div className="flex flex-col space-x-16 pt-4 w-full">
           <h3 className="text-center justify-center text-black text-8xl font-bold  uppercase">
             toppings
           </h3>
