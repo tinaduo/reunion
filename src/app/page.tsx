@@ -1,103 +1,232 @@
 import Image from "next/image";
+import Accordion from "../../components/Accordion";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+    <div className="bg-[#EBEADE] mx-60 max-w-[440px] space-y-32">
+      <section>
+        <img
+          className="mt-20"
+          src="/images/headline.png"
+          alt="Reunion Headline"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <div className="flex justify-between">
+          <h2 className="justify-center text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+            sunday july 20th 2025
+            <br />
+            2 pm - 8 pm
+          </h2>
+          <h2 className="justify-center text-right text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+            183 E Georgia St, 
+            <br />
+            Vancouver, BC
+          </h2>
+        </div>
+    </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <section>
+      <h1 className="text-center justify-center text-black text-6xl font-bold font-['Arial_Narrow']">
+        site navigation
+      </h1>
+      <div className="-space-y-8">
+        <div className="flex space-x-14">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="text-center justify-center text-black"
+            href="#menu"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+            <img
+              className="w-52"
+              src="/images/menu-button.png"
+              alt="Menu Button"
             />
-            Deploy now
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="text-center justify-center text-black"
+            href="#where"
           >
-            Read our docs
+            <img
+              className="w-52"
+              src="/images/where-button.png"
+              alt="Where Button"
+            />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="flex justify-end space-x-8">
+          <a
+            className="text-center justify-center text-black"
+            href="#info"
+          >
+            <img
+              className="w-56"
+              src="/images/info-button.png"
+              alt="info Button"
+            />
+          </a>
+          <a
+            className="text-center justify-center text-black"
+            href="#faq"
+          >
+            <img
+              className="w-56"
+              src="/images/faq-button.png"
+              alt="faq Button"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section 
+      id="menu"
+      className="flex flex-col justify-center items-center"
+    >
+      <img
+        className="w-full pb-8"
+        src="/images/menu-headline.png"
+        alt="Menu Headline"
+      />
+      <img
+        className="w-full"
+        src="/images/pizza-headline.svg"
+        alt="Pizza Headline"
+      />
+        <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+          <span className="text-black text-4xl font-normal lowercase">
+            all pizzas made fresh, served hot and crisp.
+          </span>
+          <br/><br/>
+          <span className="text-black font-bold">
+            Margherita<br/></span>
+          <span className="text-black">
+            Tomato sauce, mozzarella, fresh basil<br/></span><br/>
+          <span className="text-black font-bold">
+            Cheese<br/></span>
+          <span className="text-black">
+            A blend of cheeses<br/></span><br/>
+          <span className="text-black font-bold">
+            Pepperoni<br/></span>
+          <span className="text-black">
+            Crispy pepperoni, mozzarella, tomato sauce<br/></span>
+          <br/>
+          <span className="text-black font-bold">
+            Prosciutto<br/></span>
+          <span className="text-black">
+            Prosciutto, arugula, shaved cheese<br/></span>
+          <br/>
+          <span className="text-black font-bold">
+            Pizza Roulette
+            <br/>
+          </span>
+          <span className="text-black">
+            To feed your gambling addiction. A pizza with a surprise topping<br/>
+            <br/>
+            </span>
+          <br/>
+        </p>
+
+      <div className="flex flex-col space-x-16 pt-16">
+          <h3 className="text-center justify-center text-black text-8xl font-bold font-['Arial_Narrow'] uppercase">
+            toppings
+          </h3>
+          <p className="text-center justify-center text-black text-4xl font-normal font-['Arial_Narrow'] lowercase"> 
+            Want more on it? 
+          </p>
+            <ul className="text-left text-black text-4xl font-normal font-['Arial_Narrow'] lowercase pt-8"> 
+              <li>✷ Confit garlic</li>
+              <li>✷ Chili flakes</li>
+              <li>✷ Fresh basil</li>
+              <li>✷ Pesto</li>
+              <li>✷ Nice cheeses</li>
+              <li>✷ Nice meats</li>
+            </ul>
+        </div>
+    </section>
+
+    <section
+      id="info"
+      className="flex flex-col justify-center items-center"
+    >
+      <img
+        className="w-full pb-8"
+        src="/images/info-headline.png"
+        alt="Info Headline"
+      />
+      <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+        <span className="font-bold">Needed!</span><br />
+        Everyone - bring food/snacks/drinks.
+        <br />
+        <br /> Bee - snack & paper utensil
+        <br />
+        <br />
+        <span className="font-bold">Important</span>
+        <br />
+        ✷ If you haven't, please put your info down in the Pinned Google doc.
+        <br />
+        ✷ The budget on food is $50. Please keep your receipt. We will divide the money and pay each other.
+        <br />
+        ✷ Dinner, snacks, drinks will be upstairs in the multi-purpose room. Please throw any trash in the black garbage bags.
+      </p>
+    </section>
+
+    <section
+      id="where"
+      className="flex flex-col justify-center items-center"
+    >
+      <img
+        className="w-full pb-8"
+        src="/images/where-headline.png"
+        alt="Where Headline"
+      />
+
+
+      <a href="https://maps.app.goo.gl/oyy1fj68wV2HFFeBA" target="_blank" rel="noopener noreferrer">
+      <h3 className="text-center justify-center text-black text-7xl font-bold font-['Arial_Narrow'] uppercase">
+        183 E Georgia St, Vancouver, BC
+        <br />
+      </h3>
+      </a>
+      <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+        <span className="font-bold">How to get there?</span><br />
+        ✷ Skytrain: Main Street-Science World Station<br />
+        ✷ Bus: 3, 8, 19, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34<br />
+        ✷ Car: <a href="https://g.co/kgs/qQcJzP2" className="underline" target="_blank" rel="noopener noreferrer">Parking</a> is available on the street and in the lot behind the building.
+        <br />
+        <br />
+      </p>
+    </section>  
+
+    <section
+      id="faq"
+      className="flex flex-col justify-center items-center pb-20">
+      <img
+        className="w-full pb-8"
+        src="/images/faq-headline.png"
+        alt="FAQ Headline"
+      />
+        <Accordion />
+    </section>
+
+    <section className="pb-16">
+      <img
+          className="pb-6 mt-20"
+          src="/images/thank-you.png"
+          alt="Thanks Headline"
+        />
+        <div className="flex justify-between">
+          <h2 className="justify-center text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+            made by tina duong
+            <br />
+            li
+          </h2>
+          <h2 className="justify-center text-right text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+            with the support
+            <br />
+            max shuyu li
+          </h2>
+        </div>
+      </section>
     </div>
+    </>
   );
 }
