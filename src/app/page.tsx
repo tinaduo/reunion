@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Accordion from "../../components/Accordion";
 
 export default function Home() {
   return (
     <>
-    <div className="bg-[#EBEADE] mx-60 md:max-w-[440px] max-w-[calc(100vw-15px)]  space-y-32">
+    <div className="bg-[#EBEADE] mx-60 md:max-w-[440px] max-w-[calc(100vw-15px)] space-y-32">
       <section>
         <img
           className="mt-20"
@@ -12,7 +11,7 @@ export default function Home() {
           alt="Reunion Headline"
         />
         <div className="flex justify-between">
-          <h2 className="justify-center text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+          <h2 className="justify-center text-black text-2xl/6 font-bold font- uppercase">
             sunday july 20th 2025
             <br />
             2 pm - 8 pm
