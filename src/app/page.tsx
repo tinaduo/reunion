@@ -4,7 +4,7 @@ import Accordion from "../../components/Accordion";
 export default function Home() {
   return (
     <>
-    <div className="bg-[#EBEADE] mx-60 max-w-[440px] space-y-32">
+    <div className="bg-[#EBEADE] mx-60 md:max-w-[440px] max-w-[calc(100vw-15px)]  space-y-32">
       <section>
         <img
           className="mt-20"
@@ -26,9 +26,6 @@ export default function Home() {
     </section>
 
     <section>
-      <h1 className="text-center justify-center text-black text-6xl font-bold font-['Arial_Narrow']">
-        site navigation
-      </h1>
       <div className="-space-y-8">
         <div className="flex space-x-14">
           <a
@@ -91,7 +88,7 @@ export default function Home() {
         src="/images/pizza-headline.svg"
         alt="Pizza Headline"
       />
-        <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+        <p className="font-['Arial_Narrow'] text-4xl w-full pt-16 lowercase">
           <span className="text-black text-4xl font-normal lowercase">
             all pizzas made fresh, served hot and crisp.
           </span>
@@ -120,12 +117,11 @@ export default function Home() {
           </span>
           <span className="text-black">
             To feed your gambling addiction. A pizza with a surprise topping<br/>
-            <br/>
             </span>
           <br/>
         </p>
 
-      <div className="flex flex-col space-x-16 pt-16">
+      <div className="flex flex-col space-x-16 pt-4">
           <h3 className="text-center justify-center text-black text-8xl font-bold font-['Arial_Narrow'] uppercase">
             toppings
           </h3>
@@ -181,7 +177,7 @@ export default function Home() {
 
 
       <a href="https://maps.app.goo.gl/oyy1fj68wV2HFFeBA" target="_blank" rel="noopener noreferrer">
-      <h3 className="text-center justify-center text-black text-7xl font-bold font-['Arial_Narrow'] uppercase">
+      <h3 className="text-center justify-center text-black text-7xl pt-16 font-bold font-['Arial_Narrow'] uppercase">
         183 E Georgia St, Vancouver, BC
         <br />
       </h3>

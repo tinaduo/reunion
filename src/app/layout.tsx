@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex items-center justify-center antialiased`}
+        className={`flex items-center justify-center antialiased w-screen `}
       >
         {children}
       </body>
