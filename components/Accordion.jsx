@@ -6,7 +6,7 @@ const Accordion = () => {
     const [open, setOpen] = useState(null);
 
     return (
-        <div className="w-full p-6 space-y-2 font-[Arial_Narrow] text-2xl">
+        <div className="w-full p-6 space-y-2  text-2xl">
             <div className="border">
                 <button
                     onClick={() => setOpen(open === 1 ? null : 1)}

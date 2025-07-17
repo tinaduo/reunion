@@ -11,12 +11,12 @@ export default function Home() {
           alt="Reunion Headline"
         />
         <div className="flex justify-between">
-          <h2 className="justify-center text-black text-2xl/6 font-bold font- uppercase">
+          <h2 className="justify-center text-black text-2xl/6 font-bold uppercase">
             sunday july 20th 2025
             <br />
             2 pm - 8 pm
           </h2>
-          <h2 className="justify-center text-right text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+          <h2 className="justify-center text-right text-black text-2xl/6 font-bold uppercase">
             183 E Georgia St, 
             <br />
             Vancouver, BC
@@ -87,7 +87,7 @@ export default function Home() {
         src="/images/pizza-headline.svg"
         alt="Pizza Headline"
       />
-        <p className="font-['Arial_Narrow'] text-4xl w-full pt-16 lowercase">
+        <p className=" text-4xl w-full pt-16 lowercase">
           <span className="text-black text-4xl font-normal lowercase">
             all pizzas made fresh, served hot and crisp.
           </span>
@@ -121,13 +121,13 @@ export default function Home() {
         </p>
 
       <div className="flex flex-col space-x-16 pt-4">
-          <h3 className="text-center justify-center text-black text-8xl font-bold font-['Arial_Narrow'] uppercase">
+          <h3 className="text-center justify-center text-black text-8xl font-bold  uppercase">
             toppings
           </h3>
-          <p className="text-center justify-center text-black text-4xl font-normal font-['Arial_Narrow'] lowercase"> 
+          <p className="text-center justify-center text-black text-4xl font-normal  lowercase"> 
             Want more on it? 
           </p>
-            <ul className="text-left text-black text-4xl font-normal font-['Arial_Narrow'] lowercase pt-8"> 
+            <ul className="text-left text-black text-4xl font-normal  lowercase pt-8"> 
               <li>✷ Confit garlic</li>
               <li>✷ Chili flakes</li>
               <li>✷ Fresh basil</li>
@@ -147,7 +147,7 @@ export default function Home() {
         src="/images/info-headline.png"
         alt="Info Headline"
       />
-      <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+      <p className=" text-4xl w-full pt-8 lowercase">
         <span className="font-bold">Needed!</span><br />
         Everyone - bring food/snacks/drinks.
         <br />
@@ -176,12 +176,12 @@ export default function Home() {
 
 
       <a href="https://maps.app.goo.gl/oyy1fj68wV2HFFeBA" target="_blank" rel="noopener noreferrer">
-      <h3 className="text-center justify-center text-black text-7xl pt-16 font-bold font-['Arial_Narrow'] uppercase">
+      <h3 className="text-center justify-center text-black text-7xl pt-16 font-bold  uppercase">
         183 E Georgia St, Vancouver, BC
         <br />
       </h3>
       </a>
-      <p className="font-['Arial_Narrow'] text-4xl w-full pt-8 lowercase">
+      <p className=" text-4xl w-full pt-8 lowercase">
         <span className="font-bold">How to get there?</span><br />
         ✷ Skytrain: Main Street-Science World Station<br />
         ✷ Bus: 3, 8, 19, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34<br />
@@ -209,12 +209,12 @@ export default function Home() {
           alt="Thanks Headline"
         />
         <div className="flex justify-between">
-          <h2 className="justify-center text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+          <h2 className="justify-center text-black text-2xl/6 font-bold  uppercase">
             made by tina duong
             <br />
             li
           </h2>
-          <h2 className="justify-center text-right text-black text-2xl/6 font-bold font-['Arial_Narrow'] uppercase">
+          <h2 className="justify-center text-right text-black text-2xl/6 font-bold  uppercase">
             with the support
             <br />
             max shuyu li
